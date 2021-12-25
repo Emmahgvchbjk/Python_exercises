@@ -53,3 +53,33 @@ def hello(name):
          print("Good morning,", name)
 name = input("what's your name?")
 hello(name.capitalize())
+
+print("\n EXERCITIUL 5")
+# Write a Python program to check the validity of password input by users.
+# At least 1 letter between [a-z], 1 letter between [A-Z], 1 number between [0-9], 1 character from [$#@].
+# Minimum length 6 characters. Maximum length 16 characters.
+def pass_checker(p):
+    characters=['$','#','@']
+    counter = True
+    if not any(i.isupper() for i in p):
+        print("the password must contain at least one uppercase")
+        counter = False
+    elif not any(i.islower() for i in p):
+        print("the password must contain at least one lowercase")
+        counter = False
+    elif not any(i in characters for i in p):
+        print("the password must contain at least one special character")
+        counter = False
+    elif not any(i.isdigit() for i in p):
+        print("the password must contain at least one number")
+        counter = False
+    else:
+        counter = True
+    if counter == True and 6< len(p) <16:
+        print("valid password")
+    else:
+        print("therefore the password is invalid")
+
+p = input("input your password")
+pass_checker(p)
+
