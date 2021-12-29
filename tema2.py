@@ -36,7 +36,8 @@ mark = int(input("what's your mark?"))
 grade(mark)
 
 print("\n EXERCITIUL 3")
-# A shop will give discount of 10% if the cost of purchased quantity is more than 1000. Ask user for quantity
+# A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+# Ask user for quantity
 def price(pr):
     if pr >= 1000:
         print("you will be rewarded with a 10% discount, you need to pay ", pr - pr*0.1)
@@ -47,7 +48,8 @@ price(pr)
 
 print("\n EXERCITIUL 4")
 # Write an if statement that asks for the user's name via input() function.
-# If the name is "Bond" make it print "Welcome on board 007." Otherwise make it print "Good morning NAME". (Replace Name with user's name)
+# If the name is "Bond" make it print "Welcome on board 007."
+# Otherwise make it print "Good morning NAME". (Replace Name with user's name)
 def hello(name):
      if name == "Bond":
          print("Welcome on board 007.")
@@ -86,6 +88,7 @@ p = input("input your password: ")
 pass_checker(p)
 
 print("\n EXERCITIUL 6")
+# Write a Python program that tells a user that the number they entered is not a 5 or a 6
 def number(nr):
     if nr == "5" or nr == "6":
         print("numarul este ", nr)
@@ -96,6 +99,7 @@ nr = input("da numarul:")
 number(nr)
 
 print("\n EXERCITIUL 7")
+# read three numbers and writes them all in sorted order.
 def sort(n1, n2, n3):
     if (n1 < n2) and (n1 < n3) and (n2 < n3):
         print(n1, n2, n3)
@@ -116,18 +120,20 @@ n3 = int(input("da numarul 3 :"))
 sort(n1, n2, n3)
 
 print("\n EXERCITIUL 8")
+# We are in trouble if the parrot is talking and the hour is before 7 or after 20.
+# Return true if we are in trouble.
 def talking(hour):
     if hour < 0 or hour > 24:
         print("intervalul orar este 0-24, incearca din nou sa introduci o ora corecta")
-    elif hour < 7 or hour >20:
-        print("shh, suntem in intervalul orar de odihna!!")
     else:
-        print("papapagalul poate sa faca zgomot")
+        print(hour < 7 or hour >20)
 
 hour = int(input("ce ora este?"))
 talking(hour)
 
 print("\n EXERCITIUL 9")
+# Given a string, return a new string where "not " has been added to the front.
+# However, if the string already begins with "not", return the string unchanged.
 def negatie(cuv):
     if cuv[0:3] == "not":
         print(cuv)
@@ -138,6 +144,7 @@ cuv = input("care este cuvantul? ")
 negatie(cuv)
 
 print("\n EXERCITIUL 10")
+# Given a string, return true if the string starts with "hi" and false otherwise.
 def check(cuv2):
     print(cuv2[0:2] == "hi")
 
@@ -145,6 +152,7 @@ cuv2=input("da string-ul: ")
 check(cuv2)
 
 print("\n EXERCITIUL 11")
+# Given 2 ints, a and b, return their sum.(sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
 def sums(a, b):
     sum = a + b
     if(0 < sum < 19):
@@ -156,6 +164,7 @@ b = int(input("value 2: "))
 sums(a, b)
 
 print("\n EXERCITIUL 12")
+# Return true if the given non-negative number is special.(multiple of 11 or if it is one more than a multiple of 11.)
 def verificare(special):
     if special > 0:
         print(special % 11 == 0)
