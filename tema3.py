@@ -9,6 +9,18 @@ def verificare(luna, an):
     else:
         print(f'{luna.capitalize()} {an} are 30 zile')
 
+# def luna(luna, year):
+    # month_31 = ["december", "august"]
+    # month_30 = ["november", "january"]
+    # if month in month_31:
+    #     print("month has 31 days")
+    # elif month in month_30:
+    #     print("month has 30 days")
+    # elif (luna == "februarie" and an % 400 == 0) or (luna == "februarie" and an % 4 == 0 and an % 100 != 0):
+    #     print(f'{luna.capitalize()} {an} are 29 zile')
+    # else
+    #     print("month has 29 days")
+
 luna = input("care este luna? ")
 an = int(input("care este anul? "))
 verificare(luna, an)
