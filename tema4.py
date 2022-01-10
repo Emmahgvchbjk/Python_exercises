@@ -135,6 +135,7 @@
 # reversed()
 
 # Write a python program to print the first 10 numbers Fibonacci series
+# def fib(n):
 
 # Write a python program to read a number and print a right triangle using "*"
 # z = int(input("type the number: "))
