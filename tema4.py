@@ -12,14 +12,11 @@
 # print(nine_in_list(list))
 
 # Write a Python program that prints all the numbers from 0 to 6 except 3 and 6
-# list_a=[]
-# def print_numbers(list_a):
-#     for i in range(0,6):
-#         if i!=3 or i!=6:
-#             list_a.append(i)
-#     print(list)
-#
-# print_numbers(list_a)
+# for i in range(1,7):
+#     if i == 3 or i == 6:
+#         continue
+#     else:
+#         print(i)
 
 # Print sum of the numbers between 20 and 100
 # def sum():
@@ -135,7 +132,14 @@
 # reversed()
 
 # Write a python program to print the first 10 numbers Fibonacci series
-# def fib(n):
+# sum = 0
+# num1 = 0
+# num2 = 1
+# for i in range(1, 10):
+#     print(num1, end=" ")
+#     sum = num1 + num2
+#     num1 = num2
+#     num2 = sum
 
 # Write a python program to read a number and print a right triangle using "*"
 # z = int(input("type the number: "))
